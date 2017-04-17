@@ -1,7 +1,7 @@
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
-    entry: __dirname + "/app/index",
+    entry: __dirname + '/app/index',
     output: {
         path: __dirname + '/public/',
         filename: 'bundle.js'
@@ -43,7 +43,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin("style.css")
+        new ExtractTextPlugin('style.css')
     ],
     watch: false
 }
