@@ -35,7 +35,7 @@ npm install
 ### Server
 
 ```sh
-npm run devserver
+npm run dev
 ```
 Will create a server at `http://localhost:9100/`.
 
