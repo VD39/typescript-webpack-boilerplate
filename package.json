@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "devserver": "webpack-dev-server --port 9100"
+    "dev": "webpack-dev-server --port 9100"
   },
   "dependencies": {},
   "devDependencies": {
