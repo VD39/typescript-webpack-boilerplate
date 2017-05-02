@@ -1,4 +1,4 @@
-# ES6 Boilerplate
+# ES6 Boilerplate With Webpack
 
 My personal ES6 boilerplate built with babel, webpack, SCSS, and eslint.
 
