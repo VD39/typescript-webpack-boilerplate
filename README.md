@@ -10,7 +10,7 @@ Below is the folder structure.
 
 ```
 app
-└── styles 
+└── styles
 │    ├── main.scss
 │    └── reset.scss
 └── index.js
@@ -20,7 +20,7 @@ public
 ```
 
 Add your styles to a new .scss file and use the `@import` to add to the `main.scss` file.
-The `index.js` is the main ES6 file, import all libraries there. 
+The `index.js` is the main ES6 file, import all libraries there.
 Edit your `index.html` in the public folder.
 Replace the `favicon.ico` with your own icon.
 
@@ -35,7 +35,7 @@ npm install
 ### Server
 
 ```sh
-npm run devserver
+npm run dev
 ```
 Will create a server at `http://localhost:9100/`.
 

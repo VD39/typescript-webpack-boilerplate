@@ -1,22 +1,49 @@
 {
-  "extends": "eslint:recommended",
+  "extends": "airbnb",
+  "parser": "babel-eslint",
   "env": {
-    "browser": true,
     "commonjs": true,
-    "node": true,
-    "es6": true
+    "browser": true,
+    "es6": true,
+    "node": true
   },
-  "globals": {
-  },
-  "parserOptions": {
-    "ecmaVersion": 6,
-    "sourceType": "module"
+  "globals": {},
+  "plugins": [
+    "import",
+    "promise",
+    "compat",
+    "react"
+  ],
+  "ecmaFeatures": {
+    "jsx": true,
+    "modules": true
   },
   "rules": {
-    "no-console": "off",
-    "strict": [
+    "arrow-parens": [
+      "off"
+    ],
+    "compat/compat": 2,
+    "consistent-return": "off",
+    "comma-dangle": "off",
+    "generator-star-spacing": "off",
+    "import/no-unresolved": [
       "error",
-      "global"
-    ]
+      {
+        "ignore": [
+          "electron"
+        ]
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "windows"
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "no-use-before-define": "off",
+    "promise/param-names": 2,
+    "promise/always-return": 2,
+    "promise/catch-or-return": 2,
+    "promise/no-native": 0,
+    "no-underscore-dangle": 0
   }
 }
