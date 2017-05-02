@@ -1,4 +1,5 @@
 const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const config = {
   entry: path.join(__dirname, '/app/index'),
@@ -18,7 +19,10 @@ const config = {
       },
       {
         test: /\.css$/,
-        use: ['css-loader', 'postcss-loader', 'sass-loader']
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader', 'sass-loader']
+        })
       },
       {
         test: /\.(png|woff|woff2|eot|ttf|svg)$/,
@@ -27,7 +31,10 @@ const config = {
       {
         test: /\.scss$/,
         exclude: /node_modules/,
-        use: ['css-loader', 'postcss-loader', 'sass-loader']
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: ['css-loader', 'postcss-loader', 'sass-loader']
+        })
       },
       {
         test: /\.html$/,
