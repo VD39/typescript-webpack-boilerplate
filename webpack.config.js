@@ -43,7 +43,9 @@ const config = {
       }
     ]
   },
-  plugins: [],
+  plugins: [
+    new ExtractTextPlugin('style.css')
+  ],
   watch: false
 };
 
