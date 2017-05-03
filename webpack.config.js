@@ -5,7 +5,7 @@ const config = {
   entry: path.join(__dirname, '/app/index'),
   output: {
     path: path.join(__dirname, '/public/'),
-    filename: 'bundle.js'
+    filename: 'assets/js/bundle.js'
   },
   devServer: {
     contentBase: path.join(__dirname, '/public/')
@@ -44,7 +44,7 @@ const config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('style.css')
+    new ExtractTextPlugin('assets/css/style.css')
   ],
   watch: false
 };
