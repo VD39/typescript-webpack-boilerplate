@@ -44,7 +44,7 @@ const config = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin('assets/css/style.css')
+    new ExtractTextPlugin('assets/css/styles.css')
   ],
   watch: false
 };
