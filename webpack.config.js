@@ -49,7 +49,7 @@ const config = {
       {
         host: 'localhost',
         port: 9000,
-        proxy: 'http://localhost:9100/'
+        proxy: 'http://localhost:8080/'
       },
       {
         reload: false
