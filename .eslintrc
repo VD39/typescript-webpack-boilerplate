@@ -19,31 +19,10 @@
     "modules": true
   },
   "rules": {
-    "arrow-parens": [
-      "off"
-    ],
-    "compat/compat": 2,
-    "consistent-return": "off",
-    "comma-dangle": "off",
-    "generator-star-spacing": "off",
-    "import/no-unresolved": [
-      "error",
-      {
-        "ignore": [
-          "electron"
-        ]
-      }
-    ],
     "linebreak-style": [
-      "error",
+      2,
       "windows"
     ],
-    "import/no-extraneous-dependencies": "off",
-    "no-use-before-define": "off",
-    "promise/param-names": 2,
-    "promise/always-return": 2,
-    "promise/catch-or-return": 2,
-    "promise/no-native": 0,
-    "no-underscore-dangle": 0
+    "comma-dangle": 0
   }
 }
