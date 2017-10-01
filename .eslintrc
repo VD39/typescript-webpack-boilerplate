@@ -11,18 +11,14 @@
   "plugins": [
     "import",
     "promise",
-    "compat",
-    "react"
+    "compat"
   ],
   "ecmaFeatures": {
     "jsx": true,
     "modules": true
   },
   "rules": {
-    "linebreak-style": [
-      2,
-      "windows"
-    ],
-    "comma-dangle": 0
+    "comma-dangle": 0,
+    "jsx-a11y/href-no-hash": 0
   }
 }

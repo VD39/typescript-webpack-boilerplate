@@ -1,8 +1,8 @@
 import './styles/main.scss';
 
 const editDom = () => {
-  const hello = document.getElementById('root');
-  hello.innerHTML = 'Hello World!';
+  const root = document.getElementById('root');
+  root.innerHTML = 'Hello World!';
 };
 
 editDom();

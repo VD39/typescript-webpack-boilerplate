@@ -1,13 +1,13 @@
 /*---- Reset all styles ----*/
 
 * {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
 }
 
 article,
@@ -23,5 +23,5 @@ nav,
 section,
 img,
 video {
-    display: block;
+  display: block;
 }
