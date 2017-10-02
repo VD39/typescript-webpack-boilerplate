@@ -9,7 +9,7 @@ My personal ES6 boilerplate built with babel, webpack, SCSS, and eslint.
 Below is the folder structure.
 
 ```
-app
+src
 └── styles
 │    ├── main.scss
 │    └── reset.scss
