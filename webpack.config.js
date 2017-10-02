@@ -4,7 +4,7 @@ const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
 // Constants
-const ENTRY = path.join(__dirname, '/app');
+const ENTRY = path.join(__dirname, '/src');
 const OUTPUT = path.join(__dirname, '/public');
 const HOST = 'localhost';
 const PORT = 9000;
