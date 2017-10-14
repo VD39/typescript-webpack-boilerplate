@@ -1,5 +1,7 @@
 # ES6 Boilerplate With Webpack
 
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
+
 My personal ES6 boilerplate built with babel, webpack, SCSS, and eslint.
 
 >Feel free to use. :)
@@ -44,3 +46,6 @@ Will create a server at `http://localhost:9100/`.
 ```sh
 npm run build
 ```
+
+## License
+[MIT](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
