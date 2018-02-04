@@ -1,8 +1,12 @@
-import './styles/main.scss';
+// Import styles
+import 'sass/styles.scss';
 
+/**
+ * Will find #root element and set HTML to "Hello World!".
+ */
 const editDom = () => {
-  const root = document.getElementById('root');
-  root.innerHTML = 'Hello World!';
+  const root = document.getElementById('root'); // Get root element
+  root.innerHTML = 'Hello World!'; // Set html of the root element
 };
 
-editDom();
+editDom(); // Call editDom
