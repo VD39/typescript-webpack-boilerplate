@@ -82,6 +82,16 @@ or
 yarn build
 ```
 
+### ESLint
+
+```sh
+npm run lint
+
+or
+
+yarn lint
+```
+
 ## License
 
 [MIT](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
