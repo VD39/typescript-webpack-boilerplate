@@ -1,0 +1,245 @@
+// =============================================================================
+
+$display-heading-spacing: 35px;
+$block-spacing: 20px;
+$indent-spacing: 30px;
+
+// FONT MIXINS
+// =============================================================================
+
+@mixin font-light {
+  font-weight: 200;
+}
+
+// default font size
+@mixin bodyText {
+  font-size: rem(16px);
+  line-height: rem(22px);
+
+  @include breakpoint($tablet) {
+    font-size: rem(18px);
+    line-height: rem(26px);
+  }
+}
+
+@mixin smallBodyText {
+  font-size: rem(14px);
+  line-height: rem(20px);
+
+  @include breakpoint($tablet) {
+    font-size: rem(16px);
+    line-height: rem(22px);
+  }
+}
+
+@mixin captionText {
+  font-size: rem(13px);
+  line-height: rem(18px);
+
+  @include breakpoint($tablet) {
+    font-size: rem(14px);
+    line-height: rem(20px);
+  }
+}
+
+@mixin captionTextBold {
+  @include captionText;
+  font-weight: bold;
+}
+
+@mixin tinyText {
+  font-size: rem(12px);
+  line-height: rem(20px);
+}
+
+@mixin tinyTextBold {
+  @include tinyText;
+  font-weight: bold;
+}
+
+// Super-size heading
+@mixin displayHeading {
+  font-size: rem(42px);
+  line-height: rem(51px);
+  font-weight: bold;
+
+  @include breakpoint($tablet) {
+    font-size: rem(56px);
+    line-height: rem(62px);
+  }
+}
+
+// H1 heading
+@mixin heading {
+  font-size: rem(30px);
+  line-height: rem(38px);
+  font-weight: bold;
+
+  @include breakpoint($tablet) {
+    font-size: rem(42px);
+    line-height: rem(51px);
+  }
+}
+
+@mixin h1 {
+  @include heading;
+  margin: 0 0 $block-spacing;
+
+  @include breakpoint($tablet) {
+    margin: 0 0 $display-heading-spacing;
+  }
+}
+
+// h2 heading
+@mixin title {
+  font-size: rem(24px);
+  line-height: rem(30px);
+  font-weight: bold;
+
+  @include breakpoint($tablet) {
+    font-size: rem(30px);
+    line-height: rem(38px);
+  }
+}
+
+@mixin h2 {
+  @include title;
+  margin: 0 0 $block-spacing;
+
+  @include breakpoint($tablet) {
+    margin: 0 0 $display-heading-spacing;
+  }
+}
+
+// h3 heading
+@mixin sectionHeading {
+  font-size: rem(21px);
+  line-height: rem(28px);
+  font-weight: bold;
+
+  @include breakpoint($tablet) {
+    font-size: rem(24px);
+    line-height: rem(30px);
+  }
+}
+
+@mixin h3 {
+  @include sectionHeading;
+  margin: 0 0 $block-spacing;
+}
+
+// h4 heading
+@mixin subSectionHeading {
+  font-size: rem(18px);
+  line-height: rem(26px);
+  font-weight: bold;
+
+  @include breakpoint($tablet) {
+    font-size: rem(21px);
+    line-height: rem(28px);
+  }
+}
+
+@mixin h4 {
+  @include subSectionHeading;
+  margin: 0 0 ($block-spacing/2);
+}
+
+// h5 heading
+@mixin h5 {
+  @include bodyText;
+  font-weight: bold;
+  margin: 0;
+}
+
+// h6 heading
+@mixin h6 {
+  @include smallBodyText;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+// CATEGORY INITIAL
+// =============================================================================
+@mixin category-initial($parent: 'product-overview',$font-size-s: 38, $font-size-b: 56) {
+  background-color: $black;
+  color: $white;
+  display: block;
+  font-size: $font-size-s * 1px;
+  font-weight: bold;
+  height: 1.65em;
+  line-height: 1.65em;
+  text-align: center;
+  width: 1.65em;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-b * 1px;
+  }
+
+  // Circle variant
+  &.#{$parent}__letter--pos {
+    border-radius: 100%;
+  }
+
+  // Hexagon variant
+  &.#{$parent}__letter--cel {
+    $hexagon-size: (
+      small: $font-size-s + 19.5,
+      big: $font-size-b + 27,
+    );
+
+    $size: map-get($hexagon-size, small);
+    height: $size * 0.5774px;
+    line-height: 1;
+    margin: $size * 0.28868px 0 35px 0;
+    position: relative;
+    width: $size * 1px;
+
+    @include breakpoint($tablet) {
+      $size: map-get($hexagon-size, big); // Changing size isn't enough
+      width: $size * 1px;
+      height: $size * 0.5774px;
+    }
+
+    &::before,
+    &::after {
+      $size: map-get($hexagon-size, small);
+      border-left: $size * 0.51px solid transparent;
+      border-right: $size * 0.51px solid transparent;
+      content: '';
+      left: 0;
+      position: absolute;
+      width: 0;
+
+      @include breakpoint($tablet) {
+        $size: map-get($hexagon-size, big);
+        border-left-width: $size * 0.5px;
+        border-right-width: $size * 0.5px;
+      }
+    }
+
+    &::before {
+      $size: map-get($hexagon-size, small);
+      border-bottom: $size * 0.28868px solid $black;
+      bottom: 100%;
+
+      @include breakpoint($tablet) {
+        $size: map-get($hexagon-size, big);
+        border-bottom-width: $size * 0.28868px;
+      }
+    }
+
+    &::after {
+      $size: map-get($hexagon-size, small);
+      border-top: $size * 0.28868px solid $black;
+      top: 100%;
+      width: 0;
+
+      @include breakpoint($tablet) {
+        $size: map-get($hexagon-size, big);
+        border-top-width: $size * 0.28868px;
+      }
+    }
+  }
+}

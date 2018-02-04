@@ -3,3 +3,7 @@ node_modules
 .tmp
 .sass-cache
 npm-debug.log
+dist
+build
+.idea
+.vscode
