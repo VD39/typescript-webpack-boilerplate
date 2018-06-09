@@ -8,6 +8,7 @@ body {
   @include breakpoint($tablet) {
     background: $info;
   }
+
   @include breakpoint($desktop-small) {
     background: $alert;
   }
@@ -15,6 +16,7 @@ body {
   @include breakpoint($desktop) {
     background: $notification;
   }
+
   @include breakpoint($wide) {
     background: $black;
   }
