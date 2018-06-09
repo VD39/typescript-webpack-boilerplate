@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const WebpackCommon = require('./webpack.common');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 // Import Configuration
 const config = require('../config');
@@ -37,9 +38,7 @@ const plugins = [
       to: `${config.DIST}/assets/`,
     },
   ]),
-  new webpack.optimize.UglifyJsPlugin({
-    minimize: true,
-  }),
+  new UglifyJsPlugin(),
   new webpack.LoaderOptionsPlugin({
     minimize: true,
   }),

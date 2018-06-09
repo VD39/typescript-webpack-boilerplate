@@ -26,7 +26,7 @@ const resolve = {
  * Default modules loaders.
  */
 const modules = {
-  loaders: [
+  rules: [
     {
       test: /\.js$/,
       exclude: /node_modules/,

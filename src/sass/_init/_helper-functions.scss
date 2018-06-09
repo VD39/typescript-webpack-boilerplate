@@ -16,6 +16,7 @@ $base-font-size: 10px !default;
   @return toRem(toPx($px) / toPx($base-font-size));
 }
 
+/* stylelint-disable length-zero-no-unit */
 @function toEm($val) {
   @return ($val + 0em);
 }
@@ -27,3 +28,4 @@ $base-font-size: 10px !default;
 @function toPx($val) {
   @return ($val + 0px);
 }
+/* stylelint-enable */
