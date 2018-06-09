@@ -1,8 +1,8 @@
-# ES6 Boilerplate With Webpack
+# ES6 Boilerplate With Webpack 4
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
 
-My personal ES6 boilerplate built with Babel, Webpack, SCSS, and ESLint.
+My personal ES6 boilerplate built with Babel, Webpack 4, SCSS, ESLint, and Stylelint.
 
 > Feel free to use. :)
 
