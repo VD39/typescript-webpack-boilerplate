@@ -70,7 +70,7 @@ const modules = {
       }),
     },
     {
-      test: /\.(png|woff|woff2|eot|ttf|svg)$/,
+      test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
       loader: 'url-loader?limit=1000000',
     },
     {
