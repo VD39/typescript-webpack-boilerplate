@@ -3,7 +3,7 @@ const path = require('path');
 
 /**
  * Configuration variables for Webpack.
- * Set you own values here.
+ * Set your own values here.
  */
 const hostName = 'localhost'; // Hostname for the server
 const portNumber = 9000; // Port number for the server
