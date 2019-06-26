@@ -1,0 +1,9 @@
+# Browserlist defaults are:
+# > 1%
+# last 2 versions
+# Firefox ESR
+
+> 0.05%
+last 2 versions
+Firefox >= 42
+not IE < 11

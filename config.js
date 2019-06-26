@@ -1,4 +1,4 @@
-// Import dependencies
+// Import dependencies.
 const path = require('path');
 
 /**
@@ -7,25 +7,24 @@ const path = require('path');
  */
 const hostName = 'localhost'; // Hostname for the server
 const portNumber = 9000; // Port number for the server
-const jsFileName = './assets/js/bundle.js'; // JavaScript file name once built
-const cssFileName = './assets/css/styles.css'; // CSS file name once built
-const sourceMaps = true; // If source maps should be generated(only in dev mode)
-const devtool = 'inline-source-map'; // Source map type. Refer to: https://webpack.js.org/configuration/devtool/
+const jsOutput = './assets/js/bundle.js'; // JavaScript file name once built
+const cssOutput = './assets/css/styles.css'; // CSS file name once built
 
 /**
  * Set config.
  * These don't need to change, but feel free to change to your needs.
  */
-const config = {};
-config.ENTRY = path.join(__dirname, '/src');
-config.OUTPUT = path.join(__dirname, '/public');
-config.DIST = path.join(__dirname, '/dist');
-config.HOST = hostName;
-config.PORT = portNumber;
-config.JSFILENAME = jsFileName;
-config.CSSFILENAME = cssFileName;
-config.SOURCEMAPS = sourceMaps;
-config.DEVTOOL = devtool;
+const config = {
+  ENTRY: path.resolve(__dirname, 'src'),
+  OUTPUT: path.resolve(__dirname, 'public'),
+  DIST: path.resolve(__dirname, 'dist'),
+  STYLELINTRC: path.resolve(__dirname, '.stylelintrc'),
+  GITIGNORE: path.resolve(__dirname, '.gitignore'),
+  HOST: hostName,
+  PORT: portNumber,
+  JSOUTPUT: jsOutput,
+  CSSOUTPUT: cssOutput,
+};
 
 // Export config
 module.exports = config;
