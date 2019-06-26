@@ -19,6 +19,11 @@
     "lint:fix": "yarn lint:css --fix && yarn lint:js --fix",
     "serve": "webpack-dev-server -d --progress --color --open --config config/webpack.dev.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint:fix"
+    }
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
@@ -37,6 +42,7 @@
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
+    "husky": "^2.4.1",
     "mini-css-extract-plugin": "^0.7.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-easy-import": "^3.0.0",

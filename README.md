@@ -4,6 +4,8 @@
 
 My personal ES6 boilerplate built with Babel, Webpack 4, PostCSS, ESLint, and Stylelint.
 
+This uses [Yarn](https://yarnpkg.com) as the dependency management.
+
 > Feel free to use. :)
 
 ## Folder structure
@@ -50,32 +52,20 @@ Changes to Webpack can be made in the `config` folder.
 ### Install dependencies
 
 ```sh
-npm install
-
-or
-
 yarn install
 ```
 
 ### Server
 
 ```sh
-npm run serve
-
-or
-
 yarn serve
 ```
 
-Will create a server at `http://localhost:9000/` or the port number if you changed this in the `config.js` file.
+This will create a server at `http://localhost:9000/` or at the port number specified in the `config.js` file.
 
 ### Build
 
 ```sh
-npm run build
-
-or
-
 yarn build
 ```
 
@@ -84,30 +74,18 @@ yarn build
 JavaScript
 
 ```sh
-npm run lint:js
-
-or
-
 yarn lint:js
 ```
 
 CSS
 
 ```sh
-npm run lint:css
-
-or
-
 yarn lint:css
 ```
 
 Fix
 
 ```sh
-npm run lint:fix
-
-or
-
 yarn lint:fix
 ```
 

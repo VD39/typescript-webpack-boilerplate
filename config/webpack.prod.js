@@ -1,10 +1,10 @@
-// Import dependencies
+// Import dependencies.
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const merge = require('webpack-merge');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
-// Import Configuration
+// Import Configuration.
 const { DIST, OUTPUT } = require('../config');
 const WebpackCommon = require('./webpack.common');
 
@@ -41,5 +41,5 @@ const WebpackConfig = {
   plugins,
 };
 
-// Merge and export WebpackConfig module
+// Merge and export WebpackConfig module.
 module.exports = merge(WebpackCommon, WebpackConfig);
