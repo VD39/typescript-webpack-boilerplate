@@ -13,11 +13,13 @@
     "url": "https://github.com/VD39/es6-webpack-boilerplate.git"
   },
   "scripts": {
-    "build": "webpack -p --progress --config config/webpack.prod.js",
+    "build": "webpack -p --progress --config config/webpack.prod.babel.js",
     "lint:css": "stylelint --ignore-path .gitignore \"src/**/*.css\"",
     "lint:js": "eslint --ignore-path .gitignore src/**/*.js",
     "lint:fix": "yarn lint:css --fix && yarn lint:js --fix",
-    "serve": "webpack-dev-server -d --progress --color --open --config config/webpack.dev.js"
+    "serve": "webpack-dev-server -d --progress --color --open --config config/webpack.dev.babel.js",
+    "test": "jest src",
+    "test:watch": "yarn jest src --watch --notify"
   },
   "husky": {
     "hooks": {
@@ -27,9 +29,14 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
+    "@babel/register": "^7.4.4",
     "babel-eslint": "^10.0.2",
+    "babel-jest": "^24.8.0",
     "babel-loader": "^8.0.6",
+    "babel-plugin-rewire": "^1.2.0",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^5.0.3",
     "css-loader": "^3.0.0",
@@ -43,6 +50,7 @@
     "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^2.4.1",
+    "jest": "^24.8.0",
     "mini-css-extract-plugin": "^0.7.0",
     "optimize-css-assets-webpack-plugin": "^5.0.1",
     "postcss-easy-import": "^3.0.0",
@@ -68,6 +76,8 @@
     "Boilerplate",
     "ES6",
     "ESLint",
+    "Husky",
+    "Jest",
     "PostCSS",
     "Stylelint",
     "Webpack 4"

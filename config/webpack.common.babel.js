@@ -101,7 +101,11 @@ const plugins = [
 /**
  * Entry point for the bundle.
  */
-const entry = [`${ENTRY}/index.js`, `${ENTRY}/css/styles.css`];
+const entry = [
+  '@babel/polyfill',
+  `${ENTRY}/index.js`,
+  `${ENTRY}/css/styles.css`,
+];
 
 /**
  * Set output folder name for .js file for the dev server.
