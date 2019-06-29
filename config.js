@@ -1,5 +1,5 @@
 // Import dependencies.
-const path = require('path');
+import path from 'path';
 
 /**
  * Configuration variables for Webpack.
@@ -15,16 +15,16 @@ const cssOutput = './assets/css/styles.css'; // CSS file name once built
  * These don't need to change, but feel free to change to your needs.
  */
 const config = {
-  ENTRY: path.resolve(__dirname, 'src'),
-  OUTPUT: path.resolve(__dirname, 'public'),
+  CSSOUTPUT: cssOutput,
   DIST: path.resolve(__dirname, 'dist'),
-  STYLELINTRC: path.resolve(__dirname, '.stylelintrc'),
+  ENTRY: path.resolve(__dirname, 'src'),
   GITIGNORE: path.resolve(__dirname, '.gitignore'),
   HOST: hostName,
-  PORT: portNumber,
   JSOUTPUT: jsOutput,
-  CSSOUTPUT: cssOutput,
+  OUTPUT: path.resolve(__dirname, 'public'),
+  PORT: portNumber,
+  STYLELINTRC: path.resolve(__dirname, '.stylelintrc'),
 };
 
-// Export config
-module.exports = config;
+// Export config.
+export default config;

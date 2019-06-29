@@ -1,9 +1,11 @@
 // Import dependencies.
-const merge = require('webpack-merge');
+import merge from 'webpack-merge';
 
 // Import Configuration.
-const { DIST, HOST, PORT } = require('../config');
-const WebpackCommon = require('./webpack.common');
+import config from '../config';
+import WebpackCommon from './webpack.common.babel';
+
+const { DIST, HOST, PORT } = config;
 
 /**
  * Default dev server settings.
@@ -23,4 +25,4 @@ const WebpackConfig = {
 };
 
 // Merge and export WebpackConfig module.
-module.exports = merge(WebpackCommon, WebpackConfig);
+export default merge(WebpackCommon, WebpackConfig);

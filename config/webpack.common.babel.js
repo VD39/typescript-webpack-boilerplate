@@ -1,10 +1,13 @@
 // Import dependencies.
-const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const StyleLintPlugin = require('stylelint-webpack-plugin');
+import { CleanWebpackPlugin } from 'clean-webpack-plugin';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
+import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import StyleLintPlugin from 'stylelint-webpack-plugin';
 
 // Import Configuration.
+import config from '../config';
+
 const {
   CSSOUTPUT,
   DIST,
@@ -13,13 +16,13 @@ const {
   JSOUTPUT,
   OUTPUT,
   STYLELINTRC,
-} = require('../config');
+} = config;
 
 /**
  * Default modules loader for assets.
  */
 const assets = {
-  test: /\.(woff|woff2|eot|ttf|svg|ico|jpg|jpeg|png)$/,
+  test: /\.(eot|gif|ico|jpe?g|png|svg|ttf|woff?2)$/,
   loader: 'url-loader?limit=1000000',
 };
 
@@ -44,16 +47,7 @@ const html = {
  */
 const javascript = {
   test: /\.js$/,
-  use: [
-    {
-      loader: 'babel-loader',
-      options: {
-        presets: ['@babel/env'],
-        plugins: [['@babel/plugin-proposal-class-properties', { loose: true }]],
-      },
-    },
-    'eslint-loader',
-  ],
+  use: ['babel-loader', 'eslint-loader'],
 };
 
 /**
@@ -73,6 +67,15 @@ const javascript = {
  */
 const plugins = [
   new CleanWebpackPlugin(),
+  new CopyWebpackPlugin([
+    {
+      from: `${OUTPUT}/favicon.ico`,
+    },
+    {
+      from: `${OUTPUT}/assets/`,
+      to: `${DIST}/assets/`,
+    },
+  ]),
   new MiniCssExtractPlugin({
     filename: CSSOUTPUT,
     path: DIST,
@@ -94,12 +97,6 @@ const plugins = [
     quiet: false,
   }),
 ];
-
-/**
- * Environment mode.
- */
-const mode =
-  process.env.NODE_ENV === 'production' ? 'production' : 'development';
 
 /**
  * Entry point for the bundle.
@@ -131,7 +128,6 @@ const modules = {
  */
 const WebpackConfig = {
   entry,
-  mode,
   module: modules,
   output,
   plugins,
@@ -139,4 +135,4 @@ const WebpackConfig = {
 };
 
 // Export WebpackConfig.
-module.exports = WebpackConfig;
+export default WebpackConfig;
