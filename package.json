@@ -1,7 +1,7 @@
 {
   "name": "es6-webpack-boilerplate",
   "title": "An ES6 Boilerplate",
-  "description": "My personal ES6 Boilerplate built with babel and webpack.",
+  "description": "My personal ES6 boilerplate built with Babel 7, Webpack 4, PostCSS, Jest, ESLint, and Stylelint.",
   "url": "URL",
   "author": "Vijay Dubb",
   "copyright": "2013",
