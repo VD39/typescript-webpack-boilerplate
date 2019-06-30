@@ -8,6 +8,8 @@ This also uses [Husky](https://github.com/typicode/husky) for Git pre-commit hoo
 
 > Feel free to use. :) This may be extended to be used with [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), and [Angular](https://angular.io/).
 
+> An Example of this using React: [My portfolio](https://github.com/VD39/portfolio).
+
 # Prerequisites
 
 - [NodeJS](https://nodejs.org/en/)
