@@ -8,7 +8,7 @@ module.exports = {
       url: 'inline',
     },
     'postcss-mixins': {},
-    'postcss-mixins': {},
+    'postcss-simple-vars': {},
     'postcss-nested': {},
   },
   module: true,

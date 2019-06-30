@@ -1,5 +1,5 @@
 /**
- * Will return message with passed in paramter.
+ * Will return message with passed in parameter.
  * @param {string} [name="You"]
  */
 function setMessage(name = 'You') {
