@@ -102,7 +102,8 @@ const plugins = [
  * Entry point for the bundle.
  */
 const entry = [
-  '@babel/polyfill',
+  'core-js/stable',
+  'regenerator-runtime/runtime',
   `${ENTRY}/index.js`,
   `${ENTRY}/css/styles.css`,
 ];
