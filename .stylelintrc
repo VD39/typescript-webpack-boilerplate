@@ -1,18 +1,11 @@
 {
   "extends": "stylelint-config-standard",
   "rules": {
+    "selector-max-id": 0,
     "at-rule-no-unknown": [
       true,
       {
-        "ignoreAtRules": [
-          "/regex/",
-          "function",
-          "if",
-          "each",
-          "include",
-          "mixin",
-          "return"
-        ]
+        "ignoreAtRules": ["mixin", "mixin-content", "define-mixin"]
       }
     ]
   }
