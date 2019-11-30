@@ -119,7 +119,12 @@ const output = {
 /**
  * Array of resolve modules entry and file extension to prevent ESLint errors.
  */
-const resolve = { extensions: ['.js', '.json'] };
+const resolve = {
+  extensions: ['.js', '.json'],
+  alias: {
+    '@': ENTRY,
+  },
+};
 
 /**
  * Default modules loaders.

@@ -1,10 +1,5 @@
-/**
- * Will return message with passed in parameter.
- * @param {string} [name="You"]
- */
-function setMessage(name = 'You') {
-  return `Hello World and ${name}!`;
-}
+// Import helpers.
+import { setMessage } from '@/helpers/set-message';
 
 /**
  * Will find #root element and set HTML to "Hello World!".

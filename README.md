@@ -1,6 +1,6 @@
 # ES6 Boilerplate
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE, 'License')
 
 My personal ES6 boilerplate built with [Babel 7](https://babeljs.io/), [Webpack 4](https://webpack.js.org/), [PostCSS](https://postcss.org/), [Jest](https://jestjs.io/), [ESLint](https://eslint.org/), and [Stylelint](https://stylelint.io/).
 
@@ -24,29 +24,32 @@ src
 └── css
 │    ├── all
 │    └── styles.css
+└── helpers
 ├── index.js
-└── index.test.js
+└── index.spec.js
 public
 ├── assets
 ├── favicon.ico
 └── index.html
 ```
 
-Add your styles to the `all` folder and use the `@import` to add to the `styles.css` file.
+Add your styles to the `all` folder and use the `@import` to add to the [styles.css](src/css/styles.css) file.
 
-Add your assets, such as images to the `assets` folder.
+Add your assets, such as images to the [assets](public/assets) folder.
 
-The `index.js` is the main JavaScript file, import all libraries there.
+The [index.js](src/index.js) is the main JavaScript file, import all libraries there.
 
-The `index.text.js` is a sample of how to test using Jest.
+The [helpers/set-message/index.spec.js](src/helpers/set-message/index.spec.js) is a sample of how to test using Jest.
 
-Edit the `index.html` in the public folder to suite your needs.
+Import files using the `'@'` alias, example of this in this app is via the [helpers](src/helpers) functions inside the [index.js](src/index.js) file.
 
-Replace the `favicon.ico` with your own icon.
+Edit the [index.html](public/index.html) in the public folder to suite your needs.
+
+Replace the [favicon.ico](public/favicon.ico) with your own icon.
 
 # Configuration
 
-You may change a few configuration for Webpack within the `.config.js` file within the root folder (default settings below).
+You may change a few configuration for Webpack within the [config.js](config.js) file within the root folder (default settings below).
 
 ```
   const hostName = 'localhost';
@@ -55,7 +58,7 @@ You may change a few configuration for Webpack within the `.config.js` file with
   const cssOutput = './assets/css/styles.css';
 ```
 
-Changes to Webpack configurations may be made within the `config` folder.
+Changes to Webpack configurations may be made within the [config](config) folder.
 
 # To Use
 
@@ -71,7 +74,7 @@ Changes to Webpack configurations may be made within the `config` folder.
   yarn serve
 ```
 
-This will create a server at `http://localhost:9000/` or at the port number specified in the `config.js` file.
+This will create a server at `http://localhost:9000/` or at the port number specified in the [config.js](config.js) file.
 
 ## Build
 

@@ -7,8 +7,8 @@ import path from 'path';
  */
 const hostName = 'localhost'; // Hostname for the server
 const portNumber = 9000; // Port number for the server
-const jsOutput = './assets/js/bundle.js'; // JavaScript file name once built
-const cssOutput = './assets/css/styles.css'; // CSS file name once built
+const jsOutput = './assets/js/[name].[chunkhash:22].js'; // JavaScript file name once built
+const cssOutput = './assets/css/[name].[chunkhash:22].css'; // CSS file name once built
 
 /**
  * Set config.

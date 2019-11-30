@@ -18,5 +18,12 @@
       }
     ],
     "no-underscore-dangle": ["error", { "allow": ["__get__"] }]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./config/webpack.dev.babel.js"
+      }
+    }
   }
 }
