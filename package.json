@@ -27,7 +27,7 @@
     }
   },
   "dependencies": {
-    "core-js": "^3.4.2",
+    "core-js": "^3.6.1",
     "regenerator-runtime": "^0.13.3"
   },
   "devDependencies": {
