@@ -70,7 +70,7 @@
     "raw-loader": "^4.0.0",
     "stylelint": "^13.1.0",
     "stylelint-config-standard": "^19.0.0",
-    "stylelint-webpack-plugin": "^1.2.1",
+    "stylelint-webpack-plugin": "^1.2.3",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "url-loader": "^3.0.0",
     "webpack": "^4.41.5",
