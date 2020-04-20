@@ -67,7 +67,7 @@
     "postcss-simple-vars": "^5.0.2",
     "postcss-url": "^8.0.0",
     "prettier": "^2.0.4",
-    "raw-loader": "^4.0.0",
+    "raw-loader": "^4.0.1",
     "stylelint": "^13.3.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-webpack-plugin": "^1.2.3",
