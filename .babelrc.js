@@ -3,22 +3,14 @@ module.exports = {
     [
       '@babel/preset-env',
       {
-        targets: {
-          chrome: '55',
-          ie: '11',
+        useBuiltIns: 'usage',
+        corejs: {
+          version: 3,
+          proposals: true,
         },
         loose: true,
       },
     ],
   ],
-  plugins: [['@babel/plugin-proposal-class-properties', { loose: true }]],
-  env: {
-    test: {
-      plugins: [
-        'babel-plugin-rewire',
-        '@babel/plugin-transform-runtime',
-        '@babel/plugin-transform-modules-commonjs',
-      ],
-    },
-  },
+  plugins: [['@babel/plugin-proposal-class-properties']],
 };
