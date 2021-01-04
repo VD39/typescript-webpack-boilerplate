@@ -6,8 +6,8 @@ describe('setMessage', () => {
     [undefined, 'Hello World and You!'],
     ['John Doe', 'Hello World and John Doe!'],
     ['Jane Doe', 'Hello World and Jane Doe!'],
-  ])('With %s as name', (name, expectedValue) => {
-    it('Set message correctly', () => {
+  ])('with %s as name', (name: string | undefined, expectedValue: string) => {
+    it('sets message correctly', () => {
       const message = setMessage(name);
       expect(message).toBe(expectedValue);
     });

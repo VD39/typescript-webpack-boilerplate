@@ -2,9 +2,6 @@
  * Will return message with passed in parameter.
  * @param {string} [name="You"]
  */
-function setMessage(name = 'You') {
+export function setMessage(name = 'You'): string {
   return `Hello World and ${name}!`;
 }
-
-// eslint-disable-next-line import/prefer-default-export
-export { setMessage };

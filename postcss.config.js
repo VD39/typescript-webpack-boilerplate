@@ -1,15 +1,15 @@
 module.exports = {
   plugins: {
-    'postcss-easy-import': {},
-    'postcss-preset-env': {
-      stage: 0,
-    },
     'postcss-url': {
       url: 'inline',
     },
     'postcss-mixins': {},
-    'postcss-simple-vars': {},
     'postcss-nested': {},
+    'postcss-preset-env': {
+      stage: 0,
+    },
+    'postcss-simple-vars': {},
+    'postcss-easy-import': {},
   },
   module: true,
   url: false,
