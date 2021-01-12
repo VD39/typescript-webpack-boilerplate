@@ -55,7 +55,7 @@
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-jest-formatting": "^2.0.0",
-    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-webpack-plugin": "^2.4.1",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.0.0-beta.1",
