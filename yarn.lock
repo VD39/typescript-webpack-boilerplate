@@ -4900,14 +4900,13 @@ ignore@^5.1.1, ignore@^5.1.4, ignore@^5.1.8:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.1.8.tgz#f150a8b50a34289b33e22f5889abd4d8016f0e57"
   integrity sha512-BMpfD7PpiETpBl/A6S498BaIJ6Y/ABT93ETbby2fP00v4EbvPBXWEoaR1UBPKs3iR53pJY7EtZk5KACI57i1Uw==
 
-image-minimizer-webpack-plugin@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.yarnpkg.com/image-minimizer-webpack-plugin/-/image-minimizer-webpack-plugin-2.1.0.tgz#05c50c9f5d1b1cc728d4f93365296aa260908bbf"
-  integrity sha512-p6NwSeUW4hdM/Ux7QwxQs4JUDygjHIEuuZoR1dtRBbzLpzJdww8ihE4JdZT6IKC+Bqqm1vcJ/YooHt5tq/M8zw==
+image-minimizer-webpack-plugin@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/image-minimizer-webpack-plugin/-/image-minimizer-webpack-plugin-2.2.0.tgz#6d6d2d21424aa1b690d2e40a044bd9cd334e42ad"
+  integrity sha512-/BpKvjbfj9A+au7FryzHmj+1g3h2NzQ0w4nrXTU5YcQIGotvG69A5xyFL9Mq1htI9E8dI4rMF/wUc0klZLb1pg==
   dependencies:
     imagemin "^7.0.1"
     klona "^2.0.4"
-    loader-utils "^2.0.0"
     p-limit "^3.1.0"
     schema-utils "^3.0.0"
     serialize-javascript "^5.0.1"
