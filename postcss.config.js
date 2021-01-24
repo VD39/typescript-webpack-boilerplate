@@ -10,6 +10,7 @@ module.exports = {
     },
     'postcss-simple-vars': {},
     'postcss-easy-import': {},
+    'postcss-custom-media': {},
   },
   module: true,
   url: false,
