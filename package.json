@@ -71,7 +71,7 @@
     "postcss": "^8.2.4",
     "postcss-custom-media": "^8.0.0",
     "postcss-easy-import": "^3.0.0",
-    "postcss-loader": "^4.1.0",
+    "postcss-loader": "^4.2.0",
     "postcss-mixins": "^7.0.2",
     "postcss-nested": "^5.0.3",
     "postcss-preset-env": "^6.7.0",
