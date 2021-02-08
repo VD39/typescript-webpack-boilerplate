@@ -2,7 +2,7 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration/paths';
+import { paths } from '../configuration';
 
 /**
  * CopyWebpackPlugin()

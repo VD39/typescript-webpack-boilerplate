@@ -1,5 +1,5 @@
 // Import Configuration.
-import { paths } from '../configuration/paths';
+import { paths } from '../configuration';
 
 /**
  * Default modules loader for HTML.

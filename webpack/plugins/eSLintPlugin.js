@@ -3,8 +3,7 @@ import path from 'path';
 import ESLintPlugin from 'eslint-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration/paths';
-import { config } from '../configuration/config';
+import { paths, config } from '../configuration';
 
 /**
  * ESLintPlugin()

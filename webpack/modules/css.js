@@ -2,7 +2,7 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 
 // Import Configuration.
-import { config } from '../configuration/config';
+import { config } from '../configuration';
 
 /**
  * Default modules loader for CSS.

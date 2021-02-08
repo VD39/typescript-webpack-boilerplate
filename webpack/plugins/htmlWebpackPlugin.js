@@ -2,7 +2,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration/paths';
+import { paths } from '../configuration';
 
 /**
  * HtmlWebpackPlugin()

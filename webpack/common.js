@@ -5,8 +5,7 @@ import {
   htmlWebpackPlugin,
   copyWebpackPlugin,
 } from './plugins';
-import { paths } from './configuration/paths';
-import { config } from './configuration/config';
+import { paths, config } from './configuration';
 import { css, html, fonts, images, javaScript, typeScript } from './modules';
 
 /**

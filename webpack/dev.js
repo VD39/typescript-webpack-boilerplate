@@ -2,8 +2,7 @@
 import { merge } from 'webpack-merge';
 
 // Import Configuration.
-import { paths } from './configuration/paths';
-import { config } from './configuration/config';
+import { paths, config } from './configuration';
 import { WebpackCommonConfig } from './common';
 import { hotModuleReplacementPlugin } from './plugins';
 
@@ -19,15 +18,15 @@ const devServer = {
     errors: true,
     warnings: true,
   },
-  static: [
-    paths.dist,
-    {
-      watch: true,
-    },
-  ],
   client: {
     progress: true,
   },
+  static: [
+    {
+      watch: true,
+      directory: paths.dist,
+    },
+  ],
 };
 
 /**
