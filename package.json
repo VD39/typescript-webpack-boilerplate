@@ -66,7 +66,7 @@
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
     "jest": "^26.6.3",
-    "lint-staged": "^10.5.3",
+    "lint-staged": "^10.5.4",
     "mini-css-extract-plugin": "^1.3.5",
     "postcss": "^8.2.4",
     "postcss-custom-media": "^8.0.0",
