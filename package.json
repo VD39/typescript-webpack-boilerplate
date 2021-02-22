@@ -58,7 +58,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-webpack-plugin": "^2.5.1",
     "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.1.0",
+    "html-webpack-plugin": "^5.2.0",
     "husky": "^4.3.8",
     "image-minimizer-webpack-plugin": "^2.2.0",
     "imagemin-gifsicle": "^7.0.0",
