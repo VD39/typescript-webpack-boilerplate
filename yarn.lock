@@ -9813,10 +9813,10 @@ stylelint-order@4.1.x:
     postcss "^7.0.31"
     postcss-sorting "^5.0.1"
 
-stylelint-webpack-plugin@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-2.2.1.tgz#79cc6a7a18622c75ed8aac08c53f126d811512f1"
-  integrity sha512-zzbBtpSFkCtWX/I/bNN2q8tm5nY876R4qau/o0UynuYPZNaDZEzxtPQBGk+0feH61sXTt39WVm/j+oH6wBJlmA==
+stylelint-webpack-plugin@^2.2.2:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/stylelint-webpack-plugin/-/stylelint-webpack-plugin-2.2.2.tgz#ecd241fb689346ee471c125fb0ef149488bd1980"
+  integrity sha512-zfIsAF13xe6xuhwxZDFWQEmuVcxnRk9JFovyRL/23CWjPK1HLRw4QZdvo0Bz1bQZaDQA+6ha7cU0NO+LXaw4Mw==
   dependencies:
     "@types/stylelint" "^13.13.0"
     arrify "^2.0.1"
