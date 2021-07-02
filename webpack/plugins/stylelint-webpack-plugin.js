@@ -1,15 +1,15 @@
 // Import dependencies.
 import path from 'path';
-import StyleLintPlugin from 'stylelint-webpack-plugin';
+import StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
 
 // Import Configuration.
 import { paths, config } from '../configuration';
 
 /**
- * StyleLintPlugin()
+ * StyleLintWebpackPlugin()
  * A webpack plugin to lint your CSS/Sass code using stylelint.
  */
-export const styleLintPlugin = new StyleLintPlugin({
+export const styleLintWebpackPlugin = new StyleLintWebpackPlugin({
   emitErrors: true,
   emitWarning: true,
   context: paths.src,

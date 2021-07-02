@@ -1,3 +1,3 @@
 // Export all configuration.
-export * from './config';
 export * from './paths';
+export * from './config';

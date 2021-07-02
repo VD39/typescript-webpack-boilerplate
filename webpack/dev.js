@@ -2,8 +2,8 @@
 import { merge } from 'webpack-merge';
 
 // Import Configuration.
-import { paths, config } from './configuration';
 import { WebpackCommonConfig } from './common';
+import { paths, config } from './configuration';
 import { hotModuleReplacementPlugin } from './plugins';
 
 /**
@@ -14,10 +14,6 @@ const devServer = {
   compress: true,
   port: config.PORT,
   host: config.HOST,
-  overlay: {
-    errors: true,
-    warnings: true,
-  },
   client: {
     progress: true,
   },

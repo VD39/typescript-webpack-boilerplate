@@ -1,11 +1,11 @@
 // Import dependencies.
-import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin';
+import ImageMinimizerWebpackPlugin from 'image-minimizer-webpack-plugin';
 
 /**
- * ImageMinimizerPlugin()
+ * ImageMinimizerWebpackPlugin()
  * A webpack plugin uses imagemin to optimize your images.
  */
-export const imageMinimizerPlugin = new ImageMinimizerPlugin({
+export const imageMinimizerWebpackPlugin = new ImageMinimizerWebpackPlugin({
   test: /\.(jpe?g|png|gif|svg)$/i,
   minimizerOptions: {
     plugins: [

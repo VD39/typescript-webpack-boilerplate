@@ -5,7 +5,7 @@ import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import { config } from '../configuration';
 
 /**
- * CleanWebpackPlugin()
+ * MiniCssExtractPlugin()
  * A webpack plugin to extracts CSS into separate files.
  */
 export const miniCssExtractPlugin = new MiniCssExtractPlugin({

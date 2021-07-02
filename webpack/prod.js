@@ -7,7 +7,7 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import {
   cleanWebpackPlugin,
   miniCssExtractPlugin,
-  imageMinimizerPlugin,
+  imageMinimizerWebpackPlugin,
 } from './plugins';
 import { WebpackCommonConfig } from './common';
 
@@ -17,7 +17,7 @@ import { WebpackCommonConfig } from './common';
 const plugins = [
   cleanWebpackPlugin,
   miniCssExtractPlugin,
-  imageMinimizerPlugin,
+  imageMinimizerWebpackPlugin,
 ];
 
 /**

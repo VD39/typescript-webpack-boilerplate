@@ -1,15 +1,15 @@
 // Import dependencies.
 import path from 'path';
-import ESLintPlugin from 'eslint-webpack-plugin';
+import ESLintWebpackPlugin from 'eslint-webpack-plugin';
 
 // Import Configuration.
 import { paths, config } from '../configuration';
 
 /**
- * ESLintPlugin()
+ * ESLintWebpackPlugin()
  * A webpack plugin to lint your JavaScript/TypeScript code using ESLint.
  */
-export const eSLintPlugin = new ESLintPlugin({
+export const eSLintWebpackPlugin = new ESLintWebpackPlugin({
   emitError: true,
   emitWarning: true,
   context: paths.src,

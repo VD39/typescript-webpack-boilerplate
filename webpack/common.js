@@ -1,9 +1,9 @@
 // Import Configuration.
 import {
-  eSLintPlugin,
-  styleLintPlugin,
   htmlWebpackPlugin,
   copyWebpackPlugin,
+  eSLintWebpackPlugin,
+  styleLintWebpackPlugin,
 } from './plugins';
 import { paths, config } from './configuration';
 import { css, html, fonts, images, javaScript, typeScript } from './modules';
@@ -26,10 +26,10 @@ const output = {
  * Shared plugins.
  */
 const plugins = [
-  eSLintPlugin,
-  styleLintPlugin,
   htmlWebpackPlugin,
   copyWebpackPlugin,
+  eSLintWebpackPlugin,
+  styleLintWebpackPlugin,
 ];
 
 /**
