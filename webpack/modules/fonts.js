@@ -3,8 +3,8 @@
  */
 export const fonts = {
   test: /\.(eot|ttf|woff?2)$/,
-  loader: 'file-loader',
-  options: {
-    name: 'assets/fonts/[contenthash].[ext]',
+  type: 'asset/resource',
+  generator: {
+    filename: 'assets/fonts/[contenthash][ext]',
   },
 };

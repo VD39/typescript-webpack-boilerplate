@@ -33,7 +33,8 @@ export const imageMinimizerWebpackPlugin = new ImageMinimizerWebpackPlugin({
         {
           plugins: [
             {
-              removeViewBox: false,
+              name: 'removeViewBox',
+              active: false,
             },
           ],
         },

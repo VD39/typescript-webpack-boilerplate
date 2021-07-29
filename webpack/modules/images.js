@@ -3,8 +3,8 @@
  */
 export const images = {
   test: /\.(gif|ico|jpe?g|png|svg|webp)$/,
-  loader: 'file-loader',
-  options: {
-    name: 'assets/images/[contenthash].[ext]',
+  type: 'asset/resource',
+  generator: {
+    filename: 'assets/images/[contenthash][ext]',
   },
 };
