@@ -72,7 +72,7 @@
     "postcss-import": "^14.0.2",
     "postcss-loader": "^6.1.1",
     "postcss-mixins": "^8.1.0",
-    "postcss-nested": "^5.0.5",
+    "postcss-nested": "^5.0.6",
     "postcss-preset-env": "^6.7.0",
     "postcss-simple-vars": "^6.0.3",
     "postcss-url": "^10.1.3",
