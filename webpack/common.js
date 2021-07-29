@@ -6,7 +6,7 @@ import {
   styleLintWebpackPlugin,
 } from './plugins';
 import { paths, config } from './configuration';
-import { css, html, fonts, images, javaScript, typeScript } from './modules';
+import { css, fonts, images, javaScript, typeScript } from './modules';
 
 /**
  * Entry point for the bundle.
@@ -36,7 +36,7 @@ const plugins = [
  * Shared modules.
  */
 const modules = {
-  rules: [css, html, fonts, images, javaScript, typeScript],
+  rules: [css, fonts, images, javaScript, typeScript],
 };
 
 /**

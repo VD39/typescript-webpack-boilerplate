@@ -1,4 +1,5 @@
 // Import dependencies.
+import { extendDefaultPlugins } from 'svgo';
 import ImageMinimizerWebpackPlugin from 'image-minimizer-webpack-plugin';
 
 /**
@@ -31,11 +32,12 @@ export const imageMinimizerWebpackPlugin = new ImageMinimizerWebpackPlugin({
       [
         'svgo',
         {
-          plugins: [
+          plugins: extendDefaultPlugins([
             {
-              removeViewBox: false,
+              name: 'removeViewBox',
+              active: false,
             },
-          ],
+          ]),
         },
       ],
     ],
