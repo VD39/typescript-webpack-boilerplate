@@ -1,4 +1,4 @@
-# ES6 Boilerplate
+# Typescript Webpack Boilerplate
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE, 'License')
 
