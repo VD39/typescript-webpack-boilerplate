@@ -4,16 +4,16 @@ import { merge } from 'webpack-merge';
 // Import Configuration.
 import { WebpackCommonConfig } from './common';
 import { paths, config } from './configuration';
-import { hotModuleReplacementPlugin } from './plugins';
 
 /**
  * Default dev server settings.
  */
 const devServer = {
   open: true,
-  compress: true,
+  compress: false,
   port: config.PORT,
   host: config.HOST,
+  hot: true,
   client: {
     progress: true,
   },
@@ -26,15 +26,9 @@ const devServer = {
 };
 
 /**
- * Plugins for development.
- */
-const plugins = [hotModuleReplacementPlugin];
-
-/**
  * Webpack development configuration.
  */
 const WebpackConfig = {
-  plugins,
   devServer,
   devtool: 'cheap-module-source-map',
 };

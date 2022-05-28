@@ -14,11 +14,7 @@ import { WebpackCommonConfig } from './common';
 /**
  * Plugins for production build.
  */
-const plugins = [
-  cleanWebpackPlugin,
-  miniCssExtractPlugin,
-  imageMinimizerWebpackPlugin,
-];
+const plugins = [cleanWebpackPlugin, miniCssExtractPlugin];
 
 /**
  * Webpack production configuration.
@@ -27,7 +23,11 @@ const WebpackConfig = {
   plugins,
   optimization: {
     minimize: true,
-    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    minimizer: [
+      new CssMinimizerPlugin(),
+      new TerserPlugin(),
+      imageMinimizerWebpackPlugin,
+    ],
   },
 };
 
