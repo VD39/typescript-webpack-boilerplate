@@ -44,10 +44,6 @@ updates:
   - dependency-name: stylelint
     versions:
     - 13.12.0
-  - dependency-name: husky
-    versions:
-    - 5.1.2
-    - 5.1.3
   - dependency-name: core-js
     versions:
     - 3.9.1

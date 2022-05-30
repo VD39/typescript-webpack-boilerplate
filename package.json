@@ -26,15 +26,11 @@
     "lint:scripts:fix": "yarn lint:scripts --fix",
     "lint:styles": "stylelint --ignore-path .gitignore **/*.css",
     "lint:styles:fix": "yarn lint:styles --fix",
+    "prepare": "husky install",
     "serve": "cross-env NODE_ENV=development webpack serve --config webpack.config.babel.js",
     "check-size": "webpack --config webpack.config.babel.js --profile --json > webpack-stats.json && webpack-bundle-analyzer webpack-stats.json",
     "test": "jest",
     "test:watch": "yarn test --watch"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.18.2",
@@ -58,7 +54,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^5.5.0",
-    "husky": "^4.3.8",
+    "husky": ">=6",
     "image-minimizer-webpack-plugin": "^3.2.3",
     "imagemin": "^8.0.1",
     "imagemin-gifsicle": "^7.0.0",
@@ -66,7 +62,7 @@
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
     "jest": "^26.6.3",
-    "lint-staged": "^12.4.3",
+    "lint-staged": ">=10",
     "mini-css-extract-plugin": "^2.6.0",
     "postcss": "^8.4.14",
     "postcss-custom-media": "^8.0.0",
@@ -98,7 +94,6 @@
     "Boilerplate",
     "ES6",
     "ESLint",
-    "Husky",
     "Jest",
     "JavaScript",
     "PostCSS",

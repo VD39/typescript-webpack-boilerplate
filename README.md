@@ -12,7 +12,7 @@ A starter frontend boilerplate built with:
 - [ESLint](https://eslint.org/)
 - [Stylelint](https://stylelint.io/)
 
-This also uses [Husky](https://github.com/typicode/husky) and [lint-staged](https://github.com/okonet/lint-staged) for running pre-commit checks.
+This also uses [lint-staged](https://github.com/okonet/lint-staged) for running pre-commit checks.
 
 ## Features
 
