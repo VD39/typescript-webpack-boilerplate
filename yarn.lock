@@ -4571,10 +4571,10 @@ ignore@^5.1.8, ignore@^5.1.9, ignore@^5.2.0:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.0.tgz#6d3bac8fa7fe0d45d9f9be7bac2fc279577e345a"
   integrity sha512-CmxgYGiEPCLhfLnpPp1MoRmifwEIOgjcHXxOBjv7mY96c+eWScsOP9c112ZyLdWHi0FxHjI+4uVhKYp/gcdRmQ==
 
-image-minimizer-webpack-plugin@^3.2.3:
-  version "3.2.3"
-  resolved "https://registry.yarnpkg.com/image-minimizer-webpack-plugin/-/image-minimizer-webpack-plugin-3.2.3.tgz#69b3486b38b5355f79ec576fad3f4f42144ca887"
-  integrity sha512-a8mG+lTvIGLFnlU4BpDqbw2tr0IC+R2T57Lx+xGNCR5R6WccZ/gmL8P3y8ic0bOYL1azmh2L6+PptccdjIYqqw==
+image-minimizer-webpack-plugin@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/image-minimizer-webpack-plugin/-/image-minimizer-webpack-plugin-3.6.0.tgz#8945d543eb2523e3f58588ff3f0e50a17f89ca66"
+  integrity sha512-LV378yhu+ite4WvvqpV+w6LcaI0SjPmv6Y8h1TESGTE/hCKplfIuVoHQBpmoiAJmOTyq/YuoDY3DzVyVf6vR0Q==
   dependencies:
     schema-utils "^4.0.0"
     serialize-javascript "^6.0.0"
