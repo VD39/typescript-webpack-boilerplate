@@ -113,13 +113,13 @@ or watch files
 Run:
 
 ```sh
-  yarn lint:all
+  yarn lint
 ```
 
 To fix all possible errors automatically run:
 
 ```sh
-  yarn lint:all:fix
+  yarn lint:fix
 ```
 
 ### TypeScript (tsc)

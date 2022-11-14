@@ -20,8 +20,11 @@
   "scripts": {
     "build": "webpack --progress --config webpack.config.babel.js",
     "check-types": "tsc --project tsconfig.json --noEmit",
+    "dev": "yarn serve",
+    "lint": "yarn lint:all",
     "lint:all": "yarn lint:scripts && yarn check-types && yarn lint:styles",
     "lint:all:fix": "yarn lint:scripts:fix && yarn lint:styles:fix",
+    "lint:fix": "yarn lint:all:fix",
     "lint:scripts": "eslint --ignore-path .gitignore **/*.{js,jsx,json,ts,tsx}",
     "lint:scripts:fix": "yarn lint:scripts --fix",
     "lint:styles": "stylelint --ignore-path .gitignore **/*.css",
