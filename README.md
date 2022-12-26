@@ -22,6 +22,7 @@ This also uses [lint-staged](https://github.com/okonet/lint-staged) for running 
 - Assets optimization.
 - Webpack Dev Server plugin for local development.
 - Webpack Bundle Analyzer for visualising script output and usage.
+- CI workflow.
 
 ## Prerequisites
 
