@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+  pull_request_target:
+    branches: [ "master" ]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout branch 🛎
+      uses: actions/checkout@v3
+
+    - name: Setup node env 🏗
+      uses: actions/setup-node@v3
+      with:
+        node-version-file: .nvmrc
+
+    - name: Install dependencies 👨🏻‍💻
+      run: yarn
+
+    - name: Build 📦
+      run: yarn build
+
+    - name: Run linter 👀
+      run: yarn lint
+
+    - name: Run tests 🧪
+      run: yarn test
