@@ -68,7 +68,7 @@
     "lint-staged": ">=13",
     "mini-css-extract-plugin": "^2.7.2",
     "postcss": "^8.4.21",
-    "postcss-custom-media": "^9.0.1",
+    "postcss-custom-media": "^9.1.2",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.0.2",
     "postcss-mixins": "^9.0.4",
