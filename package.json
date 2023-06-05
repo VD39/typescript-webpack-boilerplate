@@ -66,7 +66,7 @@
     "imagemin-svgo": "^10.0.1",
     "jest": "^28.1.3",
     "lint-staged": ">=13",
-    "mini-css-extract-plugin": "^2.7.5",
+    "mini-css-extract-plugin": "^2.7.6",
     "postcss": "^8.4.23",
     "postcss-custom-media": "^9.1.2",
     "postcss-import": "^15.1.0",
