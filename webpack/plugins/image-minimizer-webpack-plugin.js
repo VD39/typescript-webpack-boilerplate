@@ -19,8 +19,8 @@ export const imageMinimizerWebpackPlugin = new ImageMinimizerWebpackPlugin({
         [
           'mozjpeg',
           {
-            progressive: true,
             arithmetic: false,
+            progressive: true,
           },
         ],
         [
@@ -35,8 +35,8 @@ export const imageMinimizerWebpackPlugin = new ImageMinimizerWebpackPlugin({
             plugins: [
               'preset-default',
               {
-                name: 'removeViewBox',
                 active: false,
+                name: 'removeViewBox',
               },
               {
                 name: 'addAttributesToSVGElement',

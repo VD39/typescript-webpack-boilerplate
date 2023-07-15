@@ -2,7 +2,7 @@
 import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration';
+import { paths } from '../../configuration/index.js';
 
 /**
  * CopyWebpackPlugin()
@@ -12,11 +12,11 @@ export const copyWebpackPlugin = new CopyWebpackPlugin({
   patterns: [
     {
       from: paths.public,
-      to: paths.dist,
       globOptions: {
         dot: true,
         ignore: ['**/.DS_Store', '**/.gitkeep', '**/index.html'],
       },
+      to: paths.dist,
     },
   ],
 });

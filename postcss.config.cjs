@@ -1,8 +1,7 @@
 module.exports = {
+  module: true,
   plugins: {
-    'postcss-url': {
-      url: 'inline',
-    },
+    'postcss-custom-media': {},
     'postcss-import': {},
     'postcss-mixins': {},
     'postcss-nested': {},
@@ -10,8 +9,9 @@ module.exports = {
       stage: 0,
     },
     'postcss-simple-vars': {},
-    'postcss-custom-media': {},
+    'postcss-url': {
+      url: 'inline',
+    },
   },
-  module: true,
   url: false,
 };

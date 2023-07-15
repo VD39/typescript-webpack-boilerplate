@@ -2,7 +2,7 @@
 import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration';
+import { paths } from '../../configuration/index.js';
 
 /**
  * CleanWebpackPlugin()
