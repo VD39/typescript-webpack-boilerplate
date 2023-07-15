@@ -43,15 +43,6 @@ module.exports = {
       rules: {
         '@typescript-eslint/no-var-requires': 0,
         '@typescript-eslint/explicit-module-boundary-types': 0,
-        // 'sort-keys': [
-        //   'error',
-        //   'asc',
-        //   {
-        //     caseSensitive: true,
-        //     natural: false,
-        //     minKeys: 2,
-        //   },
-        // ],
       },
     },
   ],

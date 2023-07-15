@@ -1,12 +1,16 @@
 # Typescript Webpack Boilerplate
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE, 'License')
+[![License][license-image]][license-url]
+[![Version][version-image]][version-url]
+[![CI][ci-image]][ci-url]
+[![Test coverage][coverage-image]][coverage-url]
+[![GitHub last commit][commit-image]][commit-url]
 
 A starter frontend boilerplate built with:
 
 - [TypeScript](https://www.typescriptlang.org/)
-- [Babel (7)](https://babeljs.io/)
-- [Webpack (5)](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
+- [Webpack 5](https://webpack.js.org/)
 - [PostCSS](https://postcss.org/)
 - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
@@ -17,6 +21,7 @@ This also uses [lint-staged](https://github.com/okonet/lint-staged) for running 
 ## Features
 
 - Support for both TypeScript and JavaScript as needed.
+- Loads environment variables via `.env` file.
 - May be extended to be used with [React](https://reactjs.org/), [Vue.js](https://vuejs.org/), or [Angular](https://angular.io/).
 - Minification of TypeScript/JavaScript and CSS processed files.
 - Assets optimization.
@@ -46,7 +51,7 @@ public
 - src
   - The entry typescript file is [index.ts](src/index.ts).
   - The [helpers/set-message](src/helpers/set-message) folder is a sample folder for how to test using Jest.
-  - Local files are imported using the `'@'` alias. See [index.ts](src/index.ts) file for example.
+  - Local files are imported using the `'@/'` alias. See [index.ts](src/index.ts) file for example.
 - scr/css
   - Add your styles here and `@import` them to the entry [styles.css](src/css/styles.css) file.
 - public
@@ -57,7 +62,19 @@ public
 
 ## Configuration
 
+### Webpack
+
 You may change the configuration for Webpack within the [webpack](webpack) folder.
+
+### Environment Variables
+
+You may set the following in your `.env` for setting up your project ([default values shown](configuration/config.js)).
+
+```sh
+PORT_NUMBER=9000
+HOST_NAME=localhost
+TITLE=TypeScript Webpack Boilerplate
+```
 
 ## Setup
 
@@ -79,7 +96,7 @@ Run:
   yarn serve
 ```
 
-This will create a server at `http://localhost:9000/` or at the port number specified in the [webpack/configuration/config.js](webpack/configuration/config.js) file.
+This will create a server at `http://localhost:9000/` or server data specified in your `.env` file.
 
 Automatically reloads after each file change.
 
@@ -173,4 +190,20 @@ This will create a server at `http://localhost:8888/` or at the port number spec
 
 ## License
 
-[MIT](https://github.com/VD39/es6-webpack-boilerplate/blob/master/LICENSE)
+Released under [MIT](LICENSE) by [@VD39](https://github.com/VD39).
+
+<!-- Image URls -->
+
+[license-image]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square
+[version-image]: https://img.shields.io/github/package-json/v/VD39/typescript-webpack-boilerplate/master?logo=github&style=flat-square
+[ci-image]: https://img.shields.io/github/actions/workflow/status/VD39/typescript-webpack-boilerplate/ci.yml?logo=githubactions&style=flat-square
+[coverage-image]: https://img.shields.io/badge/coverage-100%25-brightgreen.svg?&logo=jest&style=flat-square
+[commit-image]: https://img.shields.io/github/last-commit/VD39/typescript-webpack-boilerplate.svg?logo=git&style=flat-square
+
+<!-- Page URLs -->
+
+[license-url]: LICENSE
+[version-url]: package.json
+[ci-url]: https://github.com/VD39/typescript-webpack-boilerplate/actions?query=branch%3Amaster
+[coverage-url]: https://github.com/VD39/typescript-webpack-boilerplate?branch=master
+[commit-url]: https://github.com/VD39/typescript-webpack-boilerplate/commits/master
