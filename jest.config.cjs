@@ -3,8 +3,13 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/src/$1',
   },
   transform: {
-    '^.+\\.ts$': 'ts-jest',
-    '^.+\\.js$': 'babel-jest',
+    '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.tsx?$': [
+      'ts-jest',
+      {
+        isolatedModules: true,
+      },
+    ],
   },
   testMatch: ['<rootDir>/src/**/*.spec.{js,jsx,ts,tsx}'],
   collectCoverage: true,
@@ -14,11 +19,6 @@ module.exports = {
     '!src/index.ts',
     '!src/@types/**/*',
   ],
-  globals: {
-    'ts-jest': {
-      isolatedModules: true,
-    },
-  },
   coverageThreshold: {
     global: {
       branches: 80,

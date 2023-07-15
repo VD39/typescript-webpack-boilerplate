@@ -1,13 +1,16 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-recess-order',
+    'stylelint-prettier/recommended',
+  ],
   rules: {
-    'selector-max-id': 0,
-    'string-quotes': 'single',
     'at-rule-no-unknown': [
       true,
       {
         ignoreAtRules: ['mixin', 'mixin-content', 'define-mixin'],
       },
     ],
+    'selector-max-id': 0,
   },
 };
