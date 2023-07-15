@@ -2,7 +2,7 @@
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 // Import Configuration.
-import { paths } from '../configuration';
+import { paths, config } from '../../configuration/index.js';
 
 /**
  * HtmlWebpackPlugin()
@@ -11,4 +11,5 @@ import { paths } from '../configuration';
 export const htmlWebpackPlugin = new HtmlWebpackPlugin({
   inject: 'body',
   template: `${paths.public}/index.html`,
+  title: config.TITLE,
 });

@@ -3,19 +3,19 @@ import path from 'path';
 import StyleLintWebpackPlugin from 'stylelint-webpack-plugin';
 
 // Import Configuration.
-import { paths, config } from '../configuration';
+import { paths, config } from '../../configuration/index.js';
 
 /**
  * StyleLintWebpackPlugin()
- * A webpack plugin to lint your CSS/Sass code using stylelint.
+ * A webpack plugin to lint your CSS/SASS code using stylelint.
  */
 export const styleLintWebpackPlugin = new StyleLintWebpackPlugin({
+  configFile: path.resolve(paths.root, './stylelint.config.cjs'),
+  context: paths.src,
   emitErrors: true,
   emitWarning: true,
-  context: paths.src,
   extensions: ['.css'],
   failOnError: !config.IS_DEV,
   failOnWarning: !config.IS_DEV,
   lintDirtyModulesOnly: config.IS_DEV,
-  configFile: path.resolve(__dirname, '../../.stylelintrc.js'),
 });

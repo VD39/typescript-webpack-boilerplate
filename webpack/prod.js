@@ -8,8 +8,8 @@ import {
   cleanWebpackPlugin,
   miniCssExtractPlugin,
   imageMinimizerWebpackPlugin,
-} from './plugins';
-import { WebpackCommonConfig } from './common';
+} from './plugins/index.js';
+import { WebpackCommonConfig } from './common.js';
 
 /**
  * Plugins for production build.
@@ -20,7 +20,6 @@ const plugins = [cleanWebpackPlugin, miniCssExtractPlugin];
  * Webpack production configuration.
  */
 const WebpackConfig = {
-  plugins,
   optimization: {
     minimize: true,
     minimizer: [
@@ -29,6 +28,7 @@ const WebpackConfig = {
       imageMinimizerWebpackPlugin,
     ],
   },
+  plugins,
 };
 
 // Export configuration.

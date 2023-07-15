@@ -2,25 +2,25 @@
 import { merge } from 'webpack-merge';
 
 // Import Configuration.
-import { WebpackCommonConfig } from './common';
-import { paths, config } from './configuration';
+import { WebpackCommonConfig } from './common.js';
+import { paths, config } from '../configuration/index.js';
 
 /**
  * Default dev server settings.
  */
 const devServer = {
-  open: true,
-  compress: false,
-  port: config.PORT,
-  host: config.HOST,
-  hot: true,
   client: {
     progress: true,
   },
+  compress: false,
+  host: config.HOST,
+  hot: true,
+  open: true,
+  port: config.PORT,
   static: [
     {
-      watch: true,
       directory: paths.dist,
+      watch: true,
     },
   ],
 };
