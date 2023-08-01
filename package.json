@@ -81,7 +81,7 @@
     "jest": "^29.6.1",
     "lint-staged": "^13.2.3",
     "mini-css-extract-plugin": "^2.7.6",
-    "postcss": "^8.4.26",
+    "postcss": "^8.4.27",
     "postcss-custom-media": "^10.0.0",
     "postcss-import": "^15.1.0",
     "postcss-loader": "^7.3.3",
