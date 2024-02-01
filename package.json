@@ -98,7 +98,7 @@
     "stylelint-prettier": "^4.1.0",
     "stylelint-webpack-plugin": "^4.1.1",
     "terser-webpack-plugin": "^5.3.10",
-    "ts-jest": "^29.1.1",
+    "ts-jest": "^29.1.2",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "webpack": "^5.89.0",
